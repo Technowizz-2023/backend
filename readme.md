@@ -1,0 +1,1 @@
+Dodělat API dokumentaci, sem
