@@ -1,0 +1,1 @@
+Because ipub/websockets cause problems with versions of nette/utils
