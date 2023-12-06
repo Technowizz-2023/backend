@@ -16,11 +16,12 @@
 		"nette/mail": "^4.0",
 		"nette/robot-loader": "^4.0",
 		"nette/security": "^3.1",
-		"nette/utils": "v4.0.3 as 3.0.0",
+		"nette/utils": "v4.0.3 as v3.2.0",
 		"contributte/psr7-http-message": "v0.9.0",
 		"contributte/apitte": "v0.12.0",
 		"latte/latte": "^3.0",
-		"tracy/tracy": "^2.9"
+		"tracy/tracy": "^2.9",
+		"ipub/websockets": "^1.6"
 	},
 	"require-dev": {
 		"nette/tester": "^2.4",
