@@ -1,9 +1,14 @@
 # config.neon
 
 extensions:
+    resource: Contributte\DI\Extension\ResourceExtension
     api: Apitte\Core\DI\ApiExtension
 
 api:
     debug: %debugMode%
     catchException: true # Sets if exception should be catched and transformed into response or rethrown to output (debug only)
 
+resource:
+    resources:
+        "App\Api\V1\Controllers": # load all controllers
+            paths: [%appDir%/Api/v1/Controllers]
