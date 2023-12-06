@@ -2,9 +2,12 @@
 
 declare(strict_types=1);
 
+use Apitte\Core\Application\IApplication;
+use App\Bootstrap;
+
 require __DIR__ . '/../vendor/autoload.php';
 
-$configurator = App\Bootstrap::boot();
-$container = $configurator->createContainer();
-$application = $container->getByType(Nette\Application\Application::class);
-$application->run();
+Bootstrap::boot()
+    ->createContainer()
+    ->getByType(IApplication::class)
+    ->run();

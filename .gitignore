@@ -5,3 +5,4 @@ config/local.neon
 /log
 /bin
 composer.lock
+composer.phar
