@@ -2,7 +2,9 @@
 
 namespace App\Model\Database\Entity\Data\Projekt;
 
-class ProjektTrh
+use App\Model\Database\Entity;
+
+class ProjektTrh extends Entity
 {
 
 }

@@ -2,7 +2,9 @@
 
 namespace App\Model\Database\Entity\Data\Material;
 
-class Material
+use App\Model\Database\Entity;
+
+class Material extends Entity
 {
 
 }

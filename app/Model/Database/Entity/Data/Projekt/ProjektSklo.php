@@ -2,7 +2,9 @@
 
 namespace App\Model\Database\Entity\Data\Projekt;
 
-class ProjektSklo
+use App\Model\Database\Entity;
+
+class ProjektSklo extends Entity
 {
 
 }
