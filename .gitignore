@@ -1,8 +1,20 @@
-config/local.neon
+# Nette
+/config/local.neon
+
+# Composer
 /vendor
-/temp
-/.idea
-/log
-/bin
-composer.lock
-composer.phar
+
+# NodeJS
+/node_modules
+
+# Assets
+/www/dist
+
+# Docker
+/.docker/data
+
+# Logs
+
+/var
+
+ruleset.xml
