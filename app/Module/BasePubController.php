@@ -4,6 +4,7 @@ namespace App\Module;
 
 use Apitte\Core\Annotation\Controller as Apitte;
 use Apitte\Core\UI\Controller\IController;
+use App\Model\Database\DatabaseManager;
 
 /**
  * @Apitte\Path("/api/public")
@@ -11,5 +12,4 @@ use Apitte\Core\UI\Controller\IController;
  */
 abstract class BasePubController implements IController
 {
-
 }

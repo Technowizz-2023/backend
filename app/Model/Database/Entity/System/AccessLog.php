@@ -6,9 +6,7 @@ use App\Model\Database\Entity;
 
 class AccessLog extends Entity
 {
-	const user_id = "user_id", ip = "ip", time = "time";
+	const ip = "ip";
 
-	public int $user_id;
 	public string $ip;
-	public string $time;
 }

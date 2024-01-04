@@ -1,8 +1,7 @@
 <?php declare(strict_types = 1);
 
-namespace App\Module\V1;
+namespace App\Module\Controllers;
 
-use Apitte\Core\Annotation\Controller as Apitte;
 use App\Module\BaseController;
 
 /**

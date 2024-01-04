@@ -11,10 +11,10 @@ class DatabaseManager
 
 	/**
 	 * @param $entityName
-	 * @return Repository
+	 * @return EntityRepository
 	 */
-	public function getEntityRepository($entityName): Repository
+	public function getEntityRepository($entityName): EntityRepository
 	{
-		return new Repository(DataStructure::ENTITIES[$entityName], $this->explorer);
+		return new EntityRepository(DataStructure::ENTITIES[$entityName], $this->explorer);
 	}
 }

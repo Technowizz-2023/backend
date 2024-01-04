@@ -2,17 +2,16 @@
 
 namespace App\Model\Database;
 
-use App\Model\Database\Repository\Common\Entity\SoftDeleteObject;
 use Nette\Database\Explorer;
 use Nette\Database\Table\ActiveRow;
 use Nette\Database\Table\Selection;
 use Traversable;
 
 /**
- * Class Repository
+ * Class EntityRepository
  * @package App\Model\Database
  */
-class Repository
+class EntityRepository
 {
 	protected string $table;
 	protected Explorer $explorer;

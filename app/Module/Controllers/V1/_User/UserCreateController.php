@@ -1,13 +1,13 @@
 <?php declare(strict_types = 1);
 
-namespace App\Module\V1\User;
+namespace App\Module\V1\_User;
 
 use Apitte\Core\Exception\Api\ServerErrorException;
 use Apitte\Core\Http\ApiRequest;
 use Apitte\Core\Http\ApiResponse;
 use App\Domain\Api\Facade\UsersFacade;
 use App\Domain\Api\Request\CreateUserReqDto;
-use App\Module\V1\BaseV1Controller;
+use App\Module\Controllers\BaseV1Controller;
 use Doctrine\DBAL\Exception\DriverException;
 use Nette\Http\IResponse;
 

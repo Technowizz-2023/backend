@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace App\Module\V1\User;
+namespace App\Module\V1\_User;
 
 use Apitte\Core\Exception\Api\ClientErrorException;
 use Apitte\Core\Http\ApiRequest;
@@ -8,7 +8,7 @@ use App\Domain\Api\Facade\UsersFacade;
 use App\Domain\Api\Response\UserResDto;
 use App\Model\Exception\Runtime\Database\EntityNotFoundException;
 use App\Model\Utils\Caster;
-use App\Module\V1\BaseV1Controller;
+use App\Module\Controllers\BaseV1Controller;
 use Nette\Http\IResponse;
 
 /**

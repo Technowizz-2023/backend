@@ -1,8 +1,9 @@
-# Services
-#
 services:
 	# Domain =================
 	- App\Domain\Api\Facade\UsersFacade
+
+	# Database
+	databaseManager: App\Model\Database\DatabaseManager
 
 	## Serialize =============
 	symfony.serializer.serializer:
