@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model\Database\Entity\Granulat;
+namespace App\Model\Database\Entity\Data\_Pripravky\Granulat;
 
 use App\Model\Database\Entity\Data\_Pripravky\VyrobceTemplate;
 
