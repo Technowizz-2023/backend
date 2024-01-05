@@ -43,8 +43,8 @@ interface DataStructure
 		User::class => "sys_user",
 
 		// dynamic
-		RowNote::class => "row_note",
-		ViewNote::class => "view_note",
+		RowNote::class => "dyn_row_note",
+		ViewNote::class => "dyn_view_note",
 
 		// data
 			// components

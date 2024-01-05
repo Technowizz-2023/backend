@@ -5,6 +5,7 @@ namespace App\Module\V1\System\User;
 use Apitte\Core\Exception\Api\ClientErrorException;
 use Apitte\Core\Http\ApiRequest;
 use App\Domain\Api\Response\UserResDto;
+use App\Model\Database\Entity\System\User;
 use App\Model\Database\EntityRepository;
 use App\Model\Exception\Runtime\Database\EntityNotFoundException;
 use App\Model\Utils\Caster;
@@ -26,10 +27,15 @@ class UsersOneController extends BaseUserController
 	 *      @Apitte\RequestParameter(name="id", in="path", type="int", description="User ID")
 	 * })
 	 */
-	public function byId(ApiRequest $request): UserResDto
+	public function byId(ApiRequest $request): array
 	{
 		try {
-			return $this->findOne(Caster::toInt($request->getParameter('id')));
+			$id = Caster::toInt($request->getParameter("id"));
+			/**
+			 * @var User $user
+			 */
+			$user = $this->userRepository->findById($id);
+			unset($user->password);
 		} catch (EntityNotFoundException $e) {
 			throw ClientErrorException::create()
 				->withMessage('User not found')
